@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item1"
+        android:title="Dados pessoais"
+        android:showAsAction="always"
+         />
+
+    <item
+        android:id="@+id/item2"
+        android:title="Busca Ativa"
+        android:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/item3"
+        android:title="Acompanhamento"
+        android:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/item4"
+        android:title="Desfecho"
+        android:showAsAction="always"
+        />
+    <item
+        android:id="@+id/item5"
+        android:title="Configurações"
+        android:showAsAction="never"
+        />
+    <item
+        android:id="@+id/item6"
+        android:title="Dados do ACS"
+        android:showAsAction="never"
+        />
+</menu>
