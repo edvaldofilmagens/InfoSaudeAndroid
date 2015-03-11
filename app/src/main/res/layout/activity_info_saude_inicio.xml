@@ -2,7 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background_2"
+    android:background="@drawable/wallpaper"
     android:padding="40dp"
     >
     <LinearLayout
@@ -15,7 +15,6 @@
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:gravity="center_horizontal"
-
             android:layout_gravity="center_horizontal"
             android:drawableTop="@drawable/info_saude_mobile"
             />
