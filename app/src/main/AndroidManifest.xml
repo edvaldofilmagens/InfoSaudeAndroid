@@ -21,6 +21,11 @@
         <activity
             android:name="br.edu.ifpb.monteiro.ads.infosaude.inicio.InfoSaudeInicio"
             android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name="br.edu.ifpb.monteiro.ads.infosaude.autenticacao.Login"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

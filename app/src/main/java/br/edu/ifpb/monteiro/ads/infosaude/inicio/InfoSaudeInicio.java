@@ -6,12 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
-import java.sql.ResultSet;
-import java.sql.Statement;
-
-import br.edu.ifpb.monteiro.ads.infosaude.conexao.JDBCConnection;
 import infosaude.ads.monteiro.ifpb.edu.br.inicio.R;
 
 
@@ -22,11 +17,6 @@ public class InfoSaudeInicio extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_saude_inicio);
 
-        try {
-            testarJDBC();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
 
@@ -62,26 +52,4 @@ public class InfoSaudeInicio extends Activity {
 
     }
 
-
-    public void testarJDBC() throws Exception{
-
-        JDBCConnection con = new JDBCConnection();
-
-        Statement stPostgres = con.mySQLConnectionJDBC().createStatement();
-
-        String sql = "select * from photo where eventid = 2234;";
-
-        ResultSet result = stPostgres.executeQuery(sql);
-
-        double probabilidade = 0;
-
-        if (result.next()) {
-
-            probabilidade =   result.getFloat(1);
-
-        }
-
-        Toast.makeText(this, probabilidade +"", Toast.LENGTH_SHORT);
-
-    }
 }

@@ -28,31 +28,37 @@
             android:gravity="center_horizontal"
             android:layout_gravity="center_horizontal"
             />
+    </LinearLayout>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
             >
 
-
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Visita Domiciliar"
+                android:text="Visita domiciliar"
+                android:layout_marginTop="40dp"
+                android:padding="10dp"
                 android:onClick="fichaVisitaDomiciliar"
-                android:gravity="center_horizontal"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="10dp"
-                />
+                android:background="#c2000029"
+                android:textColor="#FFF"
+                android:id="@+id/bntLogin" />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Acompanhamento Domiliciar"
-                android:gravity="center_horizontal"
-                android:layout_margin="10dp"
-                android:layout_gravity="center_horizontal"
-                />
-        </LinearLayout>
+                android:text="Acompanhamento Nutricional"
+                android:layout_marginLeft="100dp"
+                android:padding="10dp"
+                android:layout_marginTop="40dp"
+                android:onClick="fichaVisitaDomiciliar"
+                android:background="#c2000029"
+                android:textColor="#FFF"
+                 />
+
     </LinearLayout>
 </LinearLayout>

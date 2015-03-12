@@ -32,7 +32,7 @@
         />
     <item
         android:id="@+id/item6"
-        android:title="Dados do ACS"
+        android:title="Dados do Profissional de Saúde"
         android:showAsAction="never"
         />
 </menu>

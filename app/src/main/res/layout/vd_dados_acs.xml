@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     >
     <TextView
-        android:text="Dados do Agente Comunitário de Saúde"
+        android:text="Dados do Profissional de Saúde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -21,6 +21,7 @@
             android:text="Númedo do cartão SUS:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             />
         <EditText
             android:id="@+id/txtNunCartaSUS"
@@ -28,11 +29,19 @@
             android:minWidth="100dp"
             android:layout_height="wrap_content"
             android:textColor="#000"
+            android:textSize="20dp"
             />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
         <TextView
             android:text="CBO:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             />
         <EditText
             android:id="@+id/txtCbo"
@@ -40,13 +49,15 @@
             android:minWidth="100dp"
             android:layout_height="wrap_content"
             android:textColor="#000"
+            android:textSize="20dp"
             />
 
-
+        </LinearLayout>
         <TextView
             android:text="Cód CNES Unidade:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             />
         <EditText
             android:id="@+id/txtCnes"
@@ -54,6 +65,7 @@
             android:minWidth="100dp"
             android:layout_height="wrap_content"
             android:textColor="#000"
+            android:textSize="20dp"
             />
 
     </LinearLayout>
@@ -68,12 +80,14 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:minWidth="100dp"
+            android:textSize="20dp"
             />
         <EditText
             android:id="@+id/txtCodEquipe"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:textColor="#000"
+            android:textSize="20dp"
             />
 
     </LinearLayout>
@@ -87,12 +101,15 @@
             android:text="Turno:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             />
 
         <RadioGroup
             android:id="@+id/rBTurno"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:orientation="horizontal"
             >
 
             <RadioButton
