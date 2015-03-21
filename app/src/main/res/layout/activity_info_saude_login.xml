@@ -73,14 +73,10 @@
             </LinearLayout>
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="Login"
-                android:layout_marginTop="40dp"
-                android:background="#c2000029"
                 android:onClick="efetuarLogin"
-                android:textColor="#FFF"
-                android:id="@+id/bntLogin" />
+                android:id="@+id/bntLogin"
+                style="@style/isBotao" />
 
         </LinearLayout>
     </LinearLayout>

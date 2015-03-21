@@ -1,10 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
     >
 
+    <TextView
+        android:text="Acompanhamento"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        style="@style/isTitulos"
+        />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:padding="20dp"
+        android:weightSum="10"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            >
+            <TextView
+                style="@style/isTitulos"
+                android:text="Estado"
+                />
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Gestante"/>
 
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Puérpera"/>
+
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Recém-nascido"
+                 />
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Criança"/>
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Desnutrição"/>
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Reabilitação ou com deficiência"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            >
+            <TextView
+                style="@style/isTitulos"
+                android:text="Doenças"
+                />
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Hipertensão"/>
+
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Diabetes"/>
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Asma"/>
+            <CheckBox
+                style="@style/isLabel"
+                android:text="DPOC/Enfisema"/>
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Câncer"/>
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Outras doenças crônicas"/>
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Hanseníase"/>
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Tuberculose"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            >
+            <TextView
+                style="@style/isTitulos"
+                android:text="Condição Social"
+                />
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Domiciliados/Acamados"/>
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Condições de Vulnerabilidade Social"/>
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Condicionates do bolsa família"/>
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Saúde Mental"/>
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Usuário de álcool"/>
+            <CheckBox
+                style="@style/isLabel"
+                android:text="Usuário de outras drogas"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        style="@style/isBotao"
+        android:text="Concluído"
+        android:layout_gravity="center"/>
 </LinearLayout>

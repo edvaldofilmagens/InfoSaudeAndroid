@@ -16,7 +16,7 @@ public class BuscaAtiva extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.vd_acompanhamento, null);
+        View view = inflater.inflate(R.layout.vd_busca_ativa, null);
 
         return view;
     }

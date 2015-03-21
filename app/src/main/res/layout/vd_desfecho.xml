@@ -4,71 +4,81 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="50dp">
+    >
 
     <TextView
-        android:text="Desfecho da visita"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:text="Dados da visita"
+        style="@style/isTitulos"
         android:layout_gravity="center"
-        android:textSize="30dp"/>
+        />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="70dp"
-        android:gravity="center_vertical|center_horizontal"
+        android:layout_margin="40dp"
         android:layout_gravity="center_horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center_horizontal"
             >
-
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Visita bem sucedida?"
-                android:layout_marginBottom="50dp"
-                android:textSize="25dp"
+                android:text="Visita acompanhada de outro profissional?"
+                style="@style/isTitulos"
                 />
             <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/isLabel"
                 >
 
                 <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/isLabel"
                     android:text="Sim"
-                    android:checked="true"/>
+                    />
 
                 <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/isLabel"
+                    android:text="Não"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:text="Visita bem sucedida?"
+                style="@style/isTitulos"
+                />
+
+            <RadioGroup
+                style="@style/isLabel"
+                >
+
+                <RadioButton
+                    style="@style/isLabel"
+                    android:text="Sim"
+                    />
+
+                <RadioButton
+                    style="@style/isLabel"
                     android:text="Não, porque?"/>
                 </RadioGroup>
             <EditText
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:typeface="monospace"
-                android:textColor="#000"/>
+                style="@style/isCampoTexto"/>
 
         </LinearLayout>
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/isBotao"
             android:text="Finalizar visita"
-            android:layout_marginTop="40dp"
             android:gravity="center_horizontal"
             android:layout_gravity="center_horizontal"
-            android:padding="10dp"
-            android:background="#c2000029"
-            android:textColor="#FFF"
             android:id="@+id/bntLogin" />
     </LinearLayout>
 </LinearLayout>

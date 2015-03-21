@@ -22,7 +22,7 @@
 
     <item
         android:id="@+id/item4"
-        android:title="Desfecho"
+        android:title="Dados da visita"
         android:showAsAction="always"
         />
     <item
