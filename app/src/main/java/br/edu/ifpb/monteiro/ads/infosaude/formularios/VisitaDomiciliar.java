@@ -1,4 +1,4 @@
-package br.edu.ifpb.monteiro.ads.infosaude.inicio;
+package br.edu.ifpb.monteiro.ads.infosaude.formularios;
 
 import android.app.ActionBar;
 import android.content.Intent;
@@ -9,11 +9,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import br.edu.ifpb.monteiro.ads.infosaude.formularios.Acompanhamento;
-import br.edu.ifpb.monteiro.ads.infosaude.formularios.BuscaAtiva;
-import br.edu.ifpb.monteiro.ads.infosaude.formularios.DadosACS;
-import br.edu.ifpb.monteiro.ads.infosaude.formularios.DadosPessoais;
-import br.edu.ifpb.monteiro.ads.infosaude.formularios.Desfecho;
+import br.edu.ifpb.monteiro.ads.infosaude.comportamento.NavegacaoTabs;
+import br.edu.ifpb.monteiro.ads.infosaude.inicio.InfoSaudeInicio;
 import infosaude.ads.monteiro.ifpb.edu.br.inicio.R;
 
 /**
@@ -26,9 +23,26 @@ public class VisitaDomiciliar extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_visita_familiar);
+        setContentView(R.layout.activity_visita_domiciliar);
 
         ActionBar actionBar = getActionBar();
+        actionBar = getActionBar();
+
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        //Adicionando as Tabs
+
+
+        ActionBar.Tab tab1 = actionBar.newTab();
+        tab1.setText("Acompanhamento");
+        tab1.setIcon(R.drawable.ic_launcher);
+        tab1.setTabListener(new NavegacaoTabs(new Acompanhamento()));
+        actionBar.addTab(tab1);
+
+        ActionBar.Tab tab2 = actionBar.newTab();
+        tab2.setText("Dados da Visita");
+        tab2.setTabListener(new NavegacaoTabs(new Desfecho()));
+        actionBar.addTab(tab2);
+
 
         //ACIONANDO A FUNCIONALIDADE DO ÍCONE DA ACTIONBAR
         // ... PARA SER CLICÁVEL
