@@ -126,8 +126,4 @@
         </LinearLayout>
 
     </LinearLayout>
-    <Button
-        style="@style/isBotao"
-        android:text="Concluído"
-        android:layout_gravity="center"/>
 </LinearLayout>

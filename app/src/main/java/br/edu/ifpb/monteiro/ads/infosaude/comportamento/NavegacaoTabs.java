@@ -1,44 +1,47 @@
 package br.edu.ifpb.monteiro.ads.infosaude.comportamento;
 
-import android.app.ActionBar;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.Fragment;
-import android.util.Log;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 
-import infosaude.ads.monteiro.ifpb.edu.br.inicio.R;
+import br.edu.ifpb.monteiro.ads.infosaude.formularios.Acompanhamento;
+import br.edu.ifpb.monteiro.ads.infosaude.formularios.DadosPessoais;
+import br.edu.ifpb.monteiro.ads.infosaude.formularios.Desfecho;
 
 /**
  * Created by vanderlan on 21/03/15.
+ * Classe responsável pela transição de TABS
  */
 //CLASSE QUE TRATA DA TRANSIÇÃO DAS TABS
-public class NavegacaoTabs implements ActionBar.TabListener{
+public class NavegacaoTabs extends FragmentPagerAdapter {
 
-    private Fragment frag;
-
-    public NavegacaoTabs(Fragment frag) {
-
-        this.frag = frag;
+    public NavegacaoTabs(FragmentManager fm) {
+        super(fm);
     }
 
     @Override
-    public void onTabSelected(ActionBar.Tab tab, android.app.FragmentTransaction ft) {
+    public Fragment getItem(int i) {
 
-        FragmentTransaction fts  =  frag.getActivity().getSupportFragmentManager().beginTransaction();
-        fts.replace(R.id.layout_direito, frag);
-        fts.commit();
+        switch (i) {
 
+            case 0:
+                DadosPessoais dadosPessoais = new DadosPessoais();
+                return dadosPessoais;
+
+            case 1:
+                Acompanhamento acompanhamento = new Acompanhamento();
+                return acompanhamento;
+
+            default:
+                Desfecho desfecho = new Desfecho();
+                return desfecho;
+        }
     }
 
     @Override
-    public void onTabUnselected(ActionBar.Tab tab, android.app.FragmentTransaction ft) {
-        FragmentTransaction fts  =  frag.getActivity().getSupportFragmentManager().beginTransaction();
-        fts.remove(frag);
-        fts.commit();
+    public int getCount() {
+
+        return 3;
     }
 
-    @Override
-    public void onTabReselected(ActionBar.Tab tab, android.app.FragmentTransaction ft) {
-        Log.i("TAB", "TAB RESELECT");
-    }
 }
-

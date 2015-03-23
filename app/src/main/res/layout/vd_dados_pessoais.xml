@@ -9,7 +9,6 @@
 
     <TextView
         android:text="Dados pessoais"
-        android:layout_marginLeft="70dp"
         android:gravity="center_horizontal"
         android:layout_gravity="center_horizontal"
         style="@style/isLabel"
@@ -55,6 +54,4 @@
                 style="@style/isCampoTexto" />
         </LinearLayout>
     </LinearLayout>
-
-
 </LinearLayout>

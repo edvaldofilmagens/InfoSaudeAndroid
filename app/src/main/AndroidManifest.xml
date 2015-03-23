@@ -33,6 +33,7 @@
             </intent-filter>
         </activity>
         <activity
+            android:screenOrientation="landscape"
             android:name="br.edu.ifpb.monteiro.ads.infosaude.formularios.VisitaDomiciliar"
             android:label="@string/app_name" >
         </activity>
