@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:background="@drawable/wallpaper"
     android:padding="40dp"
-    >
+    android:weightSum="1">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
 
         <TextView
             style="@style/isTitulos"
-            android:text="Escolha o tipo atendimento"
+            android:text="Olá Vanderlan Gomes, bem vindo"
             android:layout_marginTop="60dp"
             android:gravity="center_horizontal"
             android:layout_gravity="center_horizontal"
@@ -36,19 +36,17 @@
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
             >
-
+            <TextView
+                style="@style/isLabel"
+                android:text="Digite o número do cartão SUS:"
+                />
+            <EditText
+                style="@style/isCampoTexto" />
             <Button
                 style="@style/isBotao"
-                android:text="Visita domiciliar"
+                android:text="OK"
                 android:onClick="fichaVisitaDomiciliar"
                 android:id="@+id/bntLogin" />
-            <Button
-                style="@style/isBotao"
-                android:text="Acompanhamento Nutricional"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="40dp"
-                android:onClick="fichaVisitaDomiciliar"
-                 />
 
     </LinearLayout>
 </LinearLayout>

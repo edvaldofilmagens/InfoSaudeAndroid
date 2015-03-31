@@ -40,7 +40,6 @@
     <style name="isBotao">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">40dp</item>
         <item name="android:textSize">30dp</item>
         <item name="android:background">#c2000029</item>
         <item name="android:padding">15dp</item>

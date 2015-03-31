@@ -23,7 +23,6 @@ public class VisitaDomiciliar extends FragmentActivity implements ActionBar.TabL
 
         mAppSectionsPagerAdapter = new NavegacaoTabs(getSupportFragmentManager());
 
-
         // Set up the action bar.
         final ActionBar actionBar = getActionBar();
 
