@@ -23,6 +23,13 @@
         <item name="android:textSize">28dp</item>
     </style>
 
+    <style name="isCampoValue">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff3341a6</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
     <style name="isLabel">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

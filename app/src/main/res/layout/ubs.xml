@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:text="Informações da Unidade de Saúde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:text="Iteração V - Testes de WebServices SOAP com Kasoap2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:text="Nome da UBS: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:id="@+id/txtUbsNomeUbs"
+            style="@style/isCampoValue"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="Endereço: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                />
+            <TextView
+                android:id="@+id/txtUbsEndereco"
+                style="@style/isCampoValue"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:text="CNES: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:id="@+id/txtUbsCnes"
+            style="@style/isCampoValue"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:text="Cidade:"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:id="@+id/txtUbsCidade"
+            style="@style/isCampoValue"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:text="CEP: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            style="@style/isCampoValue"
+            android:id="@+id/txtUbsCep"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atualizar Informações"
+        android:id="@+id/btAtualizar"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        style="@style/isBotao"
+
+        />
+</LinearLayout>
