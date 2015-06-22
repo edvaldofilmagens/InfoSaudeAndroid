@@ -1,5 +1,7 @@
 package br.edu.ifpb.monteiro.ads.infosaude.inicio;
 
+import android.content.Context;
+
 import org.ksoap2.SoapEnvelope;
 import org.ksoap2.serialization.SoapObject;
 import org.ksoap2.serialization.SoapSerializationEnvelope;
@@ -8,19 +10,27 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
 
+import br.edu.ifpb.monteiro.ads.infosaude.enumerations.EnumEstados;
+import br.edu.ifpb.monteiro.ads.infosaude.modelos.UnidadeSaude;
+import br.edu.ifpb.monteiro.ads.infosaude.ws.Conexao;
+
 /**
- * Created by vanderlan on 17/06/15.
+ * Created by Vanderlan Gomes on 17/06/15.
  */
 public class InformacoesUnidadeSaude {
 
-    private static final String NAMESPACE = "http://webservices.infosaude.ads.monteiro.ifpb.edu.br/";
-    private static String URL = "http://192.168.0.103:8080/InfoSaude/InfomacoesUbsWS?wsdl";
     private static final String METHOD_NAME = "dadosUBS";
     private static final String SOAP_ACTION = "dadosUBSResponse";
+    private Conexao conexao;
+    private String URL;
+
     private UnidadeSaude ubs;
 
-    public InformacoesUnidadeSaude() {
 
+    public InformacoesUnidadeSaude(Context context) {
+
+        conexao = new Conexao(context);
+        URL = "http://"+conexao.getIp()+":"+conexao.getPortaHtttp()+"/InfoSaude/InfomacoesUbsWS?wsdl";
 
     }
 
@@ -33,7 +43,7 @@ public class InformacoesUnidadeSaude {
     }
 
     public void buscarIformacoes () {
-        SoapObject soapClient = new SoapObject(NAMESPACE, METHOD_NAME);
+        SoapObject soapClient = new SoapObject(conexao.getNAMESPACE(), METHOD_NAME);
 
         SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
         envelope.setOutputSoapObject(soapClient);

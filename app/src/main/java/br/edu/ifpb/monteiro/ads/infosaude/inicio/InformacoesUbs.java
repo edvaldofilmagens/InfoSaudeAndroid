@@ -25,12 +25,12 @@ public class InformacoesUbs extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ubs);
+        setContentView(R.layout.activity_informacoes_ubs);
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
                 .permitAll().build();
         StrictMode.setThreadPolicy(policy);
-        informacoesUnidadeSaude = new InformacoesUnidadeSaude();
+        informacoesUnidadeSaude = new InformacoesUnidadeSaude(getApplicationContext());
         informacoesUnidadeSaude.buscarIformacoes();
 
         nome = (TextView) findViewById(R.id.txtUbsNomeUbs);

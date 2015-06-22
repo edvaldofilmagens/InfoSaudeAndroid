@@ -1,6 +1,8 @@
-package br.edu.ifpb.monteiro.ads.infosaude.inicio;
+package br.edu.ifpb.monteiro.ads.infosaude.modelos;
 
 import java.io.Serializable;
+
+import br.edu.ifpb.monteiro.ads.infosaude.enumerations.EnumEstados;
 
 /**
  * Created by vanderlan on 17/06/15.

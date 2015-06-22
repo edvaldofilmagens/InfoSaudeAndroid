@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:text="Faça o login para ter acesso ao InfoSaúde"
             android:textSize="35dp"
-            android:layout_marginTop="75dp"
+            android:layout_marginTop="45dp"
             android:gravity="center_horizontal"
             android:layout_gravity="center_horizontal"
             />
@@ -70,6 +70,7 @@
 
             <Button
                 android:text="Login"
+                android:layout_marginTop="10dp"
                 android:onClick="efetuarLogin"
                 android:id="@+id/bntLogin"
                 style="@style/isBotao" />

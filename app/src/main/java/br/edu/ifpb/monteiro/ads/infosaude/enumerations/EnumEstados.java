@@ -1,4 +1,4 @@
-package br.edu.ifpb.monteiro.ads.infosaude.inicio;
+package br.edu.ifpb.monteiro.ads.infosaude.enumerations;
 
 import java.io.Serializable;
 

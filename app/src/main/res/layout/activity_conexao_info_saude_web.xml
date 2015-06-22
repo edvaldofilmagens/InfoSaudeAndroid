@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.edu.ifpb.monteiro.ads.infosaude.ws.ConexaoInfoSaudeWeb">
+
+    <TextView
+        style="@style/isTitulos"
+        android:layout_gravity="center"
+        android:text="Configuraçao da Conexão com o InfoSaude WEB " />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            style="@style/isLabel"
+            android:text="Endereço IP: " />
+
+        <EditText
+            android:id="@+id/txtConfIp"
+            style="@style/isCampoValue" />
+
+        <TextView
+            style="@style/isLabel"
+            android:text="Host: " />
+
+        <EditText
+            android:id="@+id/txtConfHost"
+            style="@style/isCampoValue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/isLabel"
+            android:text="Porta HTTP: " />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/txtConfHttpPort"
+            style="@style/isCampoValue" />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar Configurações"
+        android:background="@drawable/screen_border"
+        android:id="@+id/btConfSalvar"
+        android:elevation="10dp"
+        android:layout_marginTop="180dp"
+        android:layout_gravity="center_horizontal"
+        style="@style/isBotao"
+        />
+
+</LinearLayout>
